@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations</title>
+    <link rel="stylesheet" href="pexplore.css">
+</head>
+<body>
+
+    <section class="destination" id="manali">
+        <div class="content">
+            <h1>Manali</h1>
+            <p>Price: $500</p>
+            <p>Trip Days: 5</p>
+            <button onclick="showInterest('Manali')">Show Interest</button>
+        </div>
+    </section>
+
+    <section class="destination" id="kasol">
+        <div class="content">
+            <h1>Kasol</h1>
+            <p>Price: $400</p>
+            <p>Trip Days: 4</p>
+            <button onclick="showInterest('Kasol')">Show Interest</button>
+        </div>
+    </section>
+
+    <section class="destination" id="kashmir">
+        <div class="content">
+            <h1>Kashmir</h1>
+            <p>Price: $800</p>
+            <p>Trip Days: 7</p>
+            <button onclick="showInterest('Kashmir')">Show Interest</button>
+        </div>
+    </section>
+
+    <section class="destination" id="mussoorie">
+        <div class="content">
+            <h1>Mussoorie</h1>
+            <p>Price: $450</p>
+            <p>Trip Days: 5</p>
+            <button onclick="showInterest('Mussoorie')">Show Interest</button>
+        </div>
+    </section>
+
+    <section class="destination" id="dharamshala">
+        <div class="content">
+            <h1>Dharamshala</h1>
+            <p>Price: $550</p>
+            <p>Trip Days: 6</p>
+            <button onclick="showInterest('Dharamshala')">Show Interest</button>
+        </div>
+    </section>
+
+    <div class="back-button">
+        <button onclick="goBack()">Back to Main Page</button>
+    </div>
+
+    <script>
+        function showInterest(destination) {
+            alert("You have shown interest in the " + destination + " trip!");
+        }
+
+        function goBack() {
+            window.location.href = "project.html";
+        }
+    </script>
+</body>
+</html>
+
